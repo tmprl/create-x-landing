@@ -47,7 +47,7 @@ html, body {
 .button--empty {
     background-image: none;
     color: var(--accent-color);
-    border: 2px solid var(--transition)
+    border: 2px solid var(--accent-color)
 }
 
 
@@ -161,3 +161,25 @@ html, body {
 /*          header-body          */
 
 
+.header__body-inner {
+}
+.header__main {
+    display: flex;
+    justify-content: space-between;
+}
+.header__content {
+    margin-right: 30px;
+}
+.header__play {
+}
+.header__title {
+}
+.header__body-buttons {
+}
+.header__body-btn {
+}
+
+.header__img {
+}
+.header__row {
+}
