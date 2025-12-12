@@ -29,25 +29,34 @@ html, body {
 
 
 .button {
+    display: inline-block;
     letter-spacing: 0.5px;
     line-height: 52px;
     padding: 0 40px;
     color: #fff;
     background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     border-radius: 4px;
+
+    transition: var(--transition);
 }
 
-.logo {
-
+.button:hover {
+    scale: 1.1;
 }
+
+.button--empty {
+    background-image: none;
+    color: var(--accent-color);
+    border: 2px solid var(--transition)
+}
+
 
 /* ------------------------------------------------------------------ */
 
+
+/*           header-top            */
 .header {
     font-weight: 700;
-}
-.header__top {
-
 }
 
 .header__top-content {
@@ -83,7 +92,7 @@ html, body {
     line-height: 1.6;
     color: var(--gray-color);
     white-space: nowrap;
-    transition: all .2s ease;
+    transition: var(--transition)
 }
 
 .header__nav-link:hover {
@@ -126,6 +135,7 @@ html, body {
     margin-right: 3px;
     white-space: nowrap;
     line-height: 1.6;
+    transition: var(--transition);
 }
 
 .header__user-space {
@@ -139,6 +149,7 @@ html, body {
     margin-left: 3px;
     white-space: nowrap;
     line-height: 1.6;
+    transition: var(--transition);
 
 }
 
@@ -147,5 +158,6 @@ html, body {
     color: var(--accent-color)
 }
 
-.header__body {
-}
+/*          header-body          */
+
+
