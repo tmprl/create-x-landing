@@ -2,8 +2,9 @@
 
 
 :root {
+    --gray-color: #424551;
     --accent-color: #FF3F3A;
-
+    --transition: all .3s;
 }
 
 
@@ -11,7 +12,7 @@
 html, body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    color: #424551;
+    color: var(--gray-color)
 }
 
 .wrapper {
@@ -80,7 +81,7 @@ html, body {
 .header__nav-link {
     text-decoration: none;
     line-height: 1.6;
-    color: #424551;
+    color: var(--gray-color);
     white-space: nowrap;
     transition: all .2s ease;
 }
@@ -120,7 +121,7 @@ html, body {
 }
 
 .header__login-btn {
-    color: #424551;
+    color: var(--gray-color);
     text-decoration: none;
     margin-right: 3px;
     white-space: nowrap;
@@ -133,18 +134,17 @@ html, body {
 }
 
 .header__register-btn {
-    color: #424551;
+    color:var(--gray-color);
     text-decoration: none;
     margin-left: 3px;
     white-space: nowrap;
     line-height: 1.6;
-    
 
 }
 
 .header__login-btn:hover,
 .header__register-btn:hover {
-    color: #FF3F3A;
+    color: var(--accent-color)
 }
 
 .header__body {
