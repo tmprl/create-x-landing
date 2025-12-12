@@ -166,18 +166,37 @@ html, body {
 .header__main {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    color: #1E212C;
 }
 .header__content {
     margin-right: 30px;
 }
 .header__play {
+    display: flex;
+    align-items: center;
+}
+
+.header__play svg {
+    margin-right: 16px;
 }
 .header__title {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 130%;
+    max-width: 500px;
+    margin-bottom: 60px;
+    margin-top: 0px
 }
 .header__body-buttons {
+    display: flex;
 }
 .header__body-btn {
+    margin-right: 24px;
 }
+.header__body-btn:last-child {
+    margin-right: 0px
+} 
 
 .header__img {
 }
