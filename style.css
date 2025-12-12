@@ -73,6 +73,7 @@ html, body {
     text-decoration: none;
     line-height: 1.6;
     color: #424551;
+    white-space: nowrap;
 }
 .header__btn-box {
     display: flex;
@@ -81,18 +82,40 @@ html, body {
 
 .header__top-btn {
     text-decoration: none;
+    margin-right: 36px;
     white-space: nowrap;
 }
-.button {
-}
+
 .header_user {
     display: flex;
+    position: relative;
+    padding-left: 28px;
 }
+
+.header_user::before {
+    content: "";
+    background: url(./images/images/icons/user-icon.svg) no-repeat;
+    width: 20px;
+    left: 0;
+    height: 20px;
+    display: block;
+    position: absolute;
+    
+    top: 50%;
+    transform:translateY(-50%) ;
+}
+
 .header__login-btn {
     color: #424551;
     text-decoration: none;
     margin-right: 3px;
     white-space: nowrap;
+    line-height: 1.6;
+}
+
+.header__user-space {
+    cursor: default;
+    line-height: 1.6;
 }
 
 .header__register-btn {
@@ -100,7 +123,8 @@ html, body {
     text-decoration: none;
     margin-left: 3px;
     white-space: nowrap;
-}
+    line-height: 1.6;
+}   
 
 .header__body {
 }
