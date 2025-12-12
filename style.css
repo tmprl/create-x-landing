@@ -180,6 +180,7 @@ html, body {
     align-items: center;
     text-decoration: none;
     color: #1E212C;
+    margin-bottom: 24px;
 
 }
 
@@ -219,5 +220,14 @@ html, body {
 }
 
 .header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+}
 
+.header__item span {
+    font-size: 46px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 130%;
 }
